@@ -19,6 +19,7 @@ namespace WPTimeTracking
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Abrimos ventana principal de la aplicación
             Principal principal = new Principal();
             principal.Visible = true;
             this.Hide();

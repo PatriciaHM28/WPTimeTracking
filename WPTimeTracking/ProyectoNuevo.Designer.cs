@@ -116,7 +116,7 @@
             this.tb_descrip.MaximumSize = new System.Drawing.Size(250, 30);
             this.tb_descrip.MinimumSize = new System.Drawing.Size(250, 30);
             this.tb_descrip.Name = "tb_descrip";
-            this.tb_descrip.Size = new System.Drawing.Size(250, 30);
+            this.tb_descrip.Size = new System.Drawing.Size(250, 22);
             this.tb_descrip.TabIndex = 8;
             // 
             // label5
@@ -135,6 +135,7 @@
             this.tb_observaciones.Location = new System.Drawing.Point(243, 543);
             this.tb_observaciones.MaximumSize = new System.Drawing.Size(477, 200);
             this.tb_observaciones.MinimumSize = new System.Drawing.Size(477, 200);
+            this.tb_observaciones.Multiline = true;
             this.tb_observaciones.Name = "tb_observaciones";
             this.tb_observaciones.Size = new System.Drawing.Size(477, 200);
             this.tb_observaciones.TabIndex = 11;
@@ -155,7 +156,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ProyectoNuevo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = " ";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

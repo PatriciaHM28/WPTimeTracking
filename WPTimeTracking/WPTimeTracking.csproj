@@ -48,6 +48,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="TareaEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TareaEditar.Designer.cs">
+      <DependentUpon>TareaEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TareaNueva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TareaNueva.Designer.cs">
+      <DependentUpon>TareaNueva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tareas.Designer.cs">
+      <DependentUpon>Tareas.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProyectoEditar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +103,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>WPTTimeTrackingDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TareaEditar.resx">
+      <DependentUpon>TareaEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TareaNueva.resx">
+      <DependentUpon>TareaNueva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tareas.resx">
+      <DependentUpon>Tareas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>

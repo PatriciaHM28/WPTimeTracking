@@ -11,47 +11,28 @@ using System.Windows.Forms;
 
 namespace WPTimeTracking
 {
-    public partial class Proyectos : Form
+    public partial class Tareas : Form
     {
-        public Proyectos()
+        public Tareas()
         {
             InitializeComponent();
         }
 
-        private void Proyectos_Load(object sender, EventArgs e)
+        private void Tareas_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'wPTTimeTrackingDataSet.proyectos' Puede moverla o quitarla según sea necesario.
-            this.proyectosTableAdapter.Fill(this.wPTTimeTrackingDataSet.proyectos);
+            // TODO: esta línea de código carga datos en la tabla 'wPTTimeTrackingDataSet.tareas' Puede moverla o quitarla según sea necesario.
+            this.tareasTableAdapter.Fill(this.wPTTimeTrackingDataSet.tareas);
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void nuevo_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            panel2.Visible = true;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //Abrimos la ventana para crear un Nuevo proyecto
-            ProyectoNuevo proyectoNuevo = new ProyectoNuevo();
-            proyectoNuevo.Visible = true;
+            TareaNueva tareaNueva = new TareaNueva();
+            tareaNueva.Visible = true;
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            //Abrimos la ventana para editar un proyecto
-            ProyectoEditar proyectoEditar = new ProyectoEditar();
-           proyectoEditar.Visible = true;
-           this.Close();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void eliminar_Click(object sender, EventArgs e)
         {
             //Eliminamos la fila seleccionada en el dataGrid
 
@@ -62,24 +43,28 @@ namespace WPTimeTracking
 
             //CONSULTA SQL
             int id = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value);
-            String st_delete = "delete from proyectos where id = '" + id + "'";
+            String st_delete = "delete from tareas where id = '" + id + "'";
             SqlCommand cmd = new SqlCommand(st_delete, con);
             cmd.CommandText = st_delete;
 
             //MENSAJE DE ADVERTENCIA
-            if (MessageBox.Show("¿Estas seguro que quieres eliminar el proyecto con id "+id+"?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if (MessageBox.Show("¿Estas seguro que quieres eliminar la tarea con id " + id + "?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 cmd.ExecuteNonQuery();
             }
-
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-
+            panel2.Visible = true;
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel2.Visible=false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
             //Buscamos el elemento de la tabla con el id indicado en el textBox
             string s_buscar = textBox1.Text;
@@ -102,14 +87,22 @@ namespace WPTimeTracking
             }
             catch (Exception)
             {
-                MessageBox.Show("No hay ningún proyecto con ese id.");
+                MessageBox.Show("No hay ningúna tarea con ese id.");
             }
         }
 
-
-        private void button1_Click_2(object sender, EventArgs e)
+        private void editar_Click(object sender, EventArgs e)
         {
-            panel2.Visible = false;
+            TareaEditar tareaEditar = new TareaEditar();
+            tareaEditar.Visible = true;
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Principal principal = new Principal();
+            principal.Visible = true;
+            this.Close();
         }
     }
 }

@@ -45,9 +45,9 @@
             this.editar = new System.Windows.Forms.Button();
             this.nuevo = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wPTTimeTrackingDataSet)).BeginInit();
@@ -146,7 +146,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.eliminar);
             this.panel1.Controls.Add(this.editar);
@@ -202,30 +201,11 @@
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Location = new System.Drawing.Point(295, 174);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(412, 59);
             this.panel2.TabIndex = 4;
             this.panel2.Visible = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.AccessibleDescription = "";
-            this.textBox1.Location = new System.Drawing.Point(25, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(227, 22);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "ID";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(258, 10);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(70, 40);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Buscar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button1
             // 
@@ -237,12 +217,32 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(258, 10);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(70, 40);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Buscar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // textBox1
+            // 
+            this.textBox1.AccessibleDescription = "";
+            this.textBox1.Location = new System.Drawing.Point(25, 19);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(227, 22);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.Text = "ID";
+            // 
             // Proyectos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1018, 512);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);

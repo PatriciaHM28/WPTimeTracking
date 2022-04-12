@@ -19,9 +19,24 @@ namespace WPTimeTracking
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Abrimos la ventana de proyectos
             Proyectos proyectos = new Proyectos();
             proyectos.Visible = true;
-            this.Hide();
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //Abrimos la ventana de tiempos
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //Abrimos la ventana de tareas
+            Tareas tareas = new Tareas();
+            tareas.Visible = true;
+            this.Close();
         }
     }
 }
