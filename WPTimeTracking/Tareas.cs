@@ -22,7 +22,6 @@ namespace WPTimeTracking
         {
             // TODO: esta línea de código carga datos en la tabla 'wPTTimeTrackingDataSet.tareas' Puede moverla o quitarla según sea necesario.
             this.tareasTableAdapter.Fill(this.wPTTimeTrackingDataSet.tareas);
-
         }
 
         private void nuevo_Click(object sender, EventArgs e)
@@ -51,6 +50,9 @@ namespace WPTimeTracking
             if (MessageBox.Show("¿Estas seguro que quieres eliminar la tarea con id " + id + "?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 cmd.ExecuteNonQuery();
+
+                //Recarga los datos de la tabla
+                this.tareasTableAdapter.Fill(this.wPTTimeTrackingDataSet.tareas);
             }
         }
 

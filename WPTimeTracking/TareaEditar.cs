@@ -56,8 +56,8 @@ namespace WPTimeTracking
             con.Open();
 
             //CREACION Y EJECUCIÓN DE CONSULTA
-            int id = Int32.Parse(lb_id.Text);
-            String st_update = "update tareas set titulo=@titulo, descripcion=@descripcion, observaciones=@observaciones, id_estado=@id_estado, id_tecnico=@id_tecnico, id_proyecto=@id_proyecto where id='" + id + "'";
+            String s_titulo = lb_id.Text;
+            String st_update = "update tareas set titulo=@titulo, descripcion=@descripcion, observaciones=@observaciones, id_estado=@id_estado, id_tecnico=@id_tecnico, id_proyecto=@id_proyecto where titulo='" + s_titulo + "'";
             SqlCommand cmd = new SqlCommand(st_update, con);
             cmd.Parameters.AddWithValue("@titulo", tb_titulo.Text);
             cmd.Parameters.AddWithValue("@descripcion", tb_descrip.Text);
@@ -71,8 +71,8 @@ namespace WPTimeTracking
             MessageBox.Show("Tarea editada", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             //CAMBIAR DE PANTALLA
-            Proyectos proyectos = new Proyectos();
-            proyectos.Visible = true;
+            Tareas tareas = new Tareas();
+            tareas.Visible = true;
             this.Close();
         }
 
@@ -86,8 +86,8 @@ namespace WPTimeTracking
 
             //CONSULTA SQL
             SqlDataReader dr;
-            int id = Int32.Parse(lb_id.Text);
-            String st_selectTitulo = "select * from tareas where id = '" + id + "'";
+            String s_titulo = lb_id.Text;
+            String st_selectTitulo = "select * from tareas where titulo = '" + s_titulo + "'";
             SqlCommand cmd = new SqlCommand(st_selectTitulo, con);
             cmd.Connection = con;
             dr = cmd.ExecuteReader();
@@ -110,6 +110,11 @@ namespace WPTimeTracking
             Tareas tareas = new Tareas();
             tareas.Visible = true;
             this.Close();
+        }
+
+        private void lb_estado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

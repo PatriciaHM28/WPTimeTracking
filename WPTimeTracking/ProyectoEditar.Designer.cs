@@ -117,7 +117,7 @@
             this.tb_descrip.MaximumSize = new System.Drawing.Size(250, 30);
             this.tb_descrip.MinimumSize = new System.Drawing.Size(250, 30);
             this.tb_descrip.Name = "tb_descrip";
-            this.tb_descrip.Size = new System.Drawing.Size(250, 30);
+            this.tb_descrip.Size = new System.Drawing.Size(250, 22);
             this.tb_descrip.TabIndex = 15;
             this.tb_descrip.TextChanged += new System.EventHandler(this.tb_descrip_TextChanged);
             // 
@@ -185,7 +185,7 @@
             this.tb_titulo.MaximumSize = new System.Drawing.Size(250, 30);
             this.tb_titulo.MinimumSize = new System.Drawing.Size(250, 30);
             this.tb_titulo.Name = "tb_titulo";
-            this.tb_titulo.Size = new System.Drawing.Size(250, 30);
+            this.tb_titulo.Size = new System.Drawing.Size(250, 22);
             this.tb_titulo.TabIndex = 20;
             this.tb_titulo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -205,9 +205,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "ProyectoEditar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Editar Proyectos";
             this.Load += new System.EventHandler(this.ProyectoEditar_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.proyectosBindingSource)).EndInit();

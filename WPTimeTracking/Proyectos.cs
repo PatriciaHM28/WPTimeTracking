@@ -70,6 +70,9 @@ namespace WPTimeTracking
             if (MessageBox.Show("¿Estas seguro que quieres eliminar el proyecto con id "+id+"?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 cmd.ExecuteNonQuery();
+
+                //Recarga los datos de la tabla
+                this.proyectosTableAdapter.Fill(this.wPTTimeTrackingDataSet.proyectos);
             }
 
         }
@@ -110,6 +113,13 @@ namespace WPTimeTracking
         private void button1_Click_2(object sender, EventArgs e)
         {
             panel2.Visible = false;
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Principal principal = new Principal();
+            principal.Visible = true;
+            this.Close();
         }
     }
 }

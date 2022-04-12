@@ -28,7 +28,9 @@ namespace WPTimeTracking
         private void button2_Click(object sender, EventArgs e)
         {
             //Abrimos la ventana de tiempos
-
+            Tiempos tiempos = new Tiempos();
+            tiempos.Visible = true;
+            this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -37,6 +39,6 @@ namespace WPTimeTracking
             Tareas tareas = new Tareas();
             tareas.Visible = true;
             this.Close();
-        }
+        } 
     }
 }

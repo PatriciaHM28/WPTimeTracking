@@ -20,26 +20,55 @@ namespace WPTimeTracking
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //AÑADIR DATOS
+            //CONEXION BD
             SqlConnection con = new SqlConnection();
             con.ConnectionString = ("Data Source=PCPATRICIA;Initial Catalog=WPTTimeTracking;Integrated Security=True");
             con.Open();
 
-            String st_insert = "insert into tareas(titulo, descripcion, observaciones, id_estado, id_proyecto) values (@titulo, @descripcion, @observaciones, @id_estado, @id_proyecto)";
-            SqlCommand cmd = new SqlCommand(st_insert, con);
-            cmd.Parameters.AddWithValue("@titulo", tb_titulo.Text);
-            cmd.Parameters.AddWithValue("@descripcion", tb_descrip.Text);
-            cmd.Parameters.AddWithValue("@observaciones", tb_observaciones.Text);
-            cmd.Parameters.AddWithValue("@id_estado", lb_estado.Text);
-            cmd.Parameters.AddWithValue("@id_proyecto", lb_proyecto.Text);
-            cmd.ExecuteNonQuery();
-            con.Close();
+            //Buscamos el elemento de la tabla con el id indicado en el textBox
+            String titulo = tb_titulo.Text;
+            String st_selectTitulo = "select * from tareas where titulo='" + titulo + "'";
+            SqlCommand cmd2 = new SqlCommand(st_selectTitulo, con);
+            cmd2.Connection = con;
+            SqlDataReader dr = cmd2.ExecuteReader();
+            String titulo2 = "";
 
-            MessageBox.Show("Tarea creada", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //Si existe algún proyecto con ese nombre aparecerá un aviso de advertencia,
+            //de lo contrario creará el proyecto sin problemas
+            if (dr.Read())
+            {
+                titulo2 += dr["titulo"].ToString();
+            }
 
-            tb_titulo.Text = "";
-            tb_descrip.Text = "";
-            tb_observaciones.Text = "";
+            if (titulo2 == tb_titulo.Text)
+            {
+                MessageBox.Show("Ya existe un proyecto con este nombre, porfavor cambialo", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //Cierro el DataReader
+                dr.Close();
+            }
+            else
+            {
+                //Cierro el DataReader
+                dr.Close();
+
+                //Inserta datos en la BD
+                String st_insert = "insert into tareas(titulo, descripcion, observaciones, id_estado, id_proyecto) values (@titulo, @descripcion, @observaciones, @id_estado, @id_proyecto)";
+                SqlCommand cmd = new SqlCommand(st_insert, con);
+                cmd.Parameters.AddWithValue("@titulo", tb_titulo.Text);
+                cmd.Parameters.AddWithValue("@descripcion", tb_descrip.Text);
+                cmd.Parameters.AddWithValue("@observaciones", tb_observaciones.Text);
+                cmd.Parameters.AddWithValue("@id_estado", lb_estado.Text);
+                cmd.Parameters.AddWithValue("@id_proyecto", lb_proyecto.Text);
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+                MessageBox.Show("Tarea creada", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                tb_titulo.Text = "";
+                tb_descrip.Text = "";
+                tb_observaciones.Text = "";
+            }
 
             Tareas tareas = new Tareas();
             tareas.Visible = true;

@@ -36,9 +36,6 @@
             this.editar = new System.Windows.Forms.Button();
             this.nuevo = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.wPTTimeTrackingDataSet = new WPTimeTracking.WPTTimeTrackingDataSet();
-            this.tareasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tareasTableAdapter = new WPTimeTracking.WPTTimeTrackingDataSetTableAdapters.tareasTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tituloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,6 +44,9 @@
             this.idestadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idtecnicoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idproyectoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tareasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.wPTTimeTrackingDataSet = new WPTimeTracking.WPTTimeTrackingDataSet();
+            this.tareasTableAdapter = new WPTimeTracking.WPTTimeTrackingDataSetTableAdapters.tareasTableAdapter();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -54,8 +54,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wPTTimeTrackingDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tareasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wPTTimeTrackingDataSet)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -144,20 +144,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1061, 150);
             this.dataGridView1.TabIndex = 4;
             // 
-            // wPTTimeTrackingDataSet
-            // 
-            this.wPTTimeTrackingDataSet.DataSetName = "WPTTimeTrackingDataSet";
-            this.wPTTimeTrackingDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tareasBindingSource
-            // 
-            this.tareasBindingSource.DataMember = "tareas";
-            this.tareasBindingSource.DataSource = this.wPTTimeTrackingDataSet;
-            // 
-            // tareasTableAdapter
-            // 
-            this.tareasTableAdapter.ClearBeforeFill = true;
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
@@ -223,6 +209,20 @@
             this.idproyectoDataGridViewTextBoxColumn.Name = "idproyectoDataGridViewTextBoxColumn";
             this.idproyectoDataGridViewTextBoxColumn.Width = 125;
             // 
+            // tareasBindingSource
+            // 
+            this.tareasBindingSource.DataMember = "tareas";
+            this.tareasBindingSource.DataSource = this.wPTTimeTrackingDataSet;
+            // 
+            // wPTTimeTrackingDataSet
+            // 
+            this.wPTTimeTrackingDataSet.DataSetName = "WPTTimeTrackingDataSet";
+            this.wPTTimeTrackingDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tareasTableAdapter
+            // 
+            this.tareasTableAdapter.ClearBeforeFill = true;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -237,6 +237,7 @@
             // 
             // button1
             // 
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button1.Location = new System.Drawing.Point(334, 10);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(72, 40);
@@ -247,6 +248,7 @@
             // 
             // button2
             // 
+            this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button2.Location = new System.Drawing.Point(258, 10);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(70, 40);
@@ -288,14 +290,16 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Tareas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tareas";
             this.Load += new System.EventHandler(this.Tareas_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wPTTimeTrackingDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tareasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wPTTimeTrackingDataSet)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);

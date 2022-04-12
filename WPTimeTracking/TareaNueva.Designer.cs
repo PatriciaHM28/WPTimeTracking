@@ -42,15 +42,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lb_proyecto = new System.Windows.Forms.ListBox();
-            this.wPTTimeTrackingDataSet = new WPTimeTracking.WPTTimeTrackingDataSet();
             this.proyectosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.wPTTimeTrackingDataSet = new WPTimeTracking.WPTTimeTrackingDataSet();
             this.proyectosTableAdapter = new WPTimeTracking.WPTTimeTrackingDataSetTableAdapters.proyectosTableAdapter();
             this.lb_estado = new System.Windows.Forms.ListBox();
             this.testadosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.t_estadosTableAdapter = new WPTimeTracking.WPTTimeTrackingDataSetTableAdapters.t_estadosTableAdapter();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.wPTTimeTrackingDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wPTTimeTrackingDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.testadosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,7 +120,7 @@
             this.tb_descrip.MaximumSize = new System.Drawing.Size(250, 30);
             this.tb_descrip.MinimumSize = new System.Drawing.Size(250, 30);
             this.tb_descrip.Name = "tb_descrip";
-            this.tb_descrip.Size = new System.Drawing.Size(250, 30);
+            this.tb_descrip.Size = new System.Drawing.Size(250, 22);
             this.tb_descrip.TabIndex = 15;
             // 
             // tb_titulo
@@ -129,7 +129,7 @@
             this.tb_titulo.MaximumSize = new System.Drawing.Size(250, 30);
             this.tb_titulo.MinimumSize = new System.Drawing.Size(250, 30);
             this.tb_titulo.Name = "tb_titulo";
-            this.tb_titulo.Size = new System.Drawing.Size(250, 30);
+            this.tb_titulo.Size = new System.Drawing.Size(250, 22);
             this.tb_titulo.TabIndex = 14;
             // 
             // label3
@@ -158,7 +158,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(51, 388);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(193, 45);
+            this.label4.Size = new System.Drawing.Size(154, 36);
             this.label4.TabIndex = 18;
             this.label4.Text = "ID_Estado";
             // 
@@ -168,7 +168,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(495, 397);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(224, 45);
+            this.label6.Size = new System.Drawing.Size(179, 36);
             this.label6.TabIndex = 19;
             this.label6.Text = "ID_Proyecto";
             // 
@@ -183,15 +183,15 @@
             this.lb_proyecto.Size = new System.Drawing.Size(231, 36);
             this.lb_proyecto.TabIndex = 20;
             // 
-            // wPTTimeTrackingDataSet
-            // 
-            this.wPTTimeTrackingDataSet.DataSetName = "WPTTimeTrackingDataSet";
-            this.wPTTimeTrackingDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // proyectosBindingSource
             // 
             this.proyectosBindingSource.DataMember = "proyectos";
             this.proyectosBindingSource.DataSource = this.wPTTimeTrackingDataSet;
+            // 
+            // wPTTimeTrackingDataSet
+            // 
+            this.wPTTimeTrackingDataSet.DataSetName = "WPTTimeTrackingDataSet";
+            this.wPTTimeTrackingDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // proyectosTableAdapter
             // 
@@ -235,13 +235,15 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "TareaNueva";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tarea Nueva";
             this.Load += new System.EventHandler(this.TareaNueva_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.wPTTimeTrackingDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wPTTimeTrackingDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.testadosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
