@@ -1,0 +1,40 @@
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking\WPTimeTracking\bin\Debug\WPTimeTracking.exe.config
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking\WPTimeTracking\bin\Debug\WPTimeTracking.exe
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking\WPTimeTracking\bin\Debug\WPTimeTracking.pdb
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking\WPTimeTracking\obj\Debug\WPTimeTracking.csproj.AssemblyReference.cache
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking\WPTimeTracking\obj\Debug\WPTimeTracking.csproj.SuggestedBindingRedirects.cache
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking\WPTimeTracking\obj\Debug\WPTimeTracking.Proyectos.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking\WPTimeTracking\obj\Debug\WPTimeTracking.Properties.Resources.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking\WPTimeTracking\obj\Debug\WPTimeTracking.csproj.GenerateResource.cache
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking\WPTimeTracking\obj\Debug\WPTimeTracking.csproj.CoreCompileInputs.cache
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking\WPTimeTracking\obj\Debug\WPTimeTracking.exe
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking\WPTimeTracking\obj\Debug\WPTimeTracking.pdb
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking\WPTimeTracking\obj\Debug\WPTimeTracking.Principal.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking\WPTimeTracking\obj\Debug\WPTimeTracking.Login.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking\WPTimeTracking\obj\Debug\WPTimeTracking.ProyectoNuevo.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking\WPTimeTracking\obj\Debug\WPTimeTracking.ProyectoEditar.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking\WPTimeTracking\obj\Debug\WPTimeTracking.Tareas.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking\WPTimeTracking\obj\Debug\WPTimeTracking.TareaNueva.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking\WPTimeTracking\obj\Debug\WPTimeTracking.TareaEditar.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking\WPTimeTracking\obj\Debug\WPTimeTracking.Tiempos.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking\WPTimeTracking\obj\Debug\WPTimeTracking.TiempoIniciar.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking - copia\WPTimeTracking\bin\Debug\WPTimeTracking.exe.config
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking - copia\WPTimeTracking\bin\Debug\WPTimeTracking.exe
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking - copia\WPTimeTracking\bin\Debug\WPTimeTracking.pdb
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking - copia\WPTimeTracking\obj\Debug\WPTimeTracking.csproj.AssemblyReference.cache
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking - copia\WPTimeTracking\obj\Debug\WPTimeTracking.csproj.SuggestedBindingRedirects.cache
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking - copia\WPTimeTracking\obj\Debug\WPTimeTracking.TareaEditar.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking - copia\WPTimeTracking\obj\Debug\WPTimeTracking.TareaNueva.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking - copia\WPTimeTracking\obj\Debug\WPTimeTracking.Tareas.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking - copia\WPTimeTracking\obj\Debug\WPTimeTracking.Login.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking - copia\WPTimeTracking\obj\Debug\WPTimeTracking.Principal.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking - copia\WPTimeTracking\obj\Debug\WPTimeTracking.ProyectoEditar.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking - copia\WPTimeTracking\obj\Debug\WPTimeTracking.ProyectoNuevo.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking - copia\WPTimeTracking\obj\Debug\WPTimeTracking.Proyectos.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking - copia\WPTimeTracking\obj\Debug\WPTimeTracking.Properties.Resources.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking - copia\WPTimeTracking\obj\Debug\WPTimeTracking.TiempoIniciar.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking - copia\WPTimeTracking\obj\Debug\WPTimeTracking.Tiempos.resources
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking - copia\WPTimeTracking\obj\Debug\WPTimeTracking.csproj.GenerateResource.cache
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking - copia\WPTimeTracking\obj\Debug\WPTimeTracking.csproj.CoreCompileInputs.cache
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking - copia\WPTimeTracking\obj\Debug\WPTimeTracking.exe
+D:\DOCUMENTOS\Proyecto\Proyectos prueba\WPTimeTracking - copia\WPTimeTracking\obj\Debug\WPTimeTracking.pdb
